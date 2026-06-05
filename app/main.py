@@ -21,6 +21,7 @@ default_cors_origins = [
     "http://127.0.0.1:3000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://front-test-ecru.vercel.app"
 ]
 cors_origins = [
     origin.strip()
@@ -35,6 +36,7 @@ app.add_middleware(
         "http://127.0.0.1:3000",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://front-test-ecru.vercel.app"
     ],
     allow_origin_regex=r"http://(10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+):(?:3000|5173)",
     allow_credentials=True,
